@@ -1,4 +1,4 @@
-## Apollo Federation Demo
+## Apollo Federation Demo With Babel 7
 
 This repository is a demo of using Apollo Federation to build a single schema on top of multiple services. The microservices are located under the [`./services`](./services/) folder and the gateway that composes the overall schema is in the [`gateway.js`](./gateway.js) file.
 
