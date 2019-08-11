@@ -1,0 +1,14 @@
+type User @key(fields: "id") {
+  """
+  Identificador único del usuario
+  """
+  id: ID!
+  """
+  Nombre del usuario
+  """
+  name: String
+  """
+  Nombre usuario
+  """
+  username: String
+}

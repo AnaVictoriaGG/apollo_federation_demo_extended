@@ -1,0 +1,37 @@
+{
+  "name": "federation-demo",
+  "main": "gateway.js",
+  "scripts": {
+    "start-gateway": "nodemon --delay 2 --exec babel-node gateway.js",
+    "start-service-accounts": "nodemon --exec babel-node services/accounts/index.js",
+    "start-service-reviews": "nodemon --exec babel-node services/reviews/index.js",
+    "start-service-products": "nodemon --exec babel-node services/products/index.js",
+    "start-service-inventory": "nodemon --exec babel-node services/inventory/index.js",
+    "start-services": "concurrently \"npm:start-service-*\"",
+    "postinstall": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "concurrently": "latest",
+    "lerna": "latest",
+    "nodemon": "latest"
+  },
+  "quokka": {
+    "babel": true
+  },
+  "dependencies": {
+    "@apollo/gateway": "latest",
+    "apollo-server": "^2.5.1-alpha.1",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-inline-import": "^2.0.6",
+    "babel-plugin-transform-exponentiation-operator": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "graphql": "latest",
+    "merge-graphql-schemas": "^1.7.0"
+  }
+}

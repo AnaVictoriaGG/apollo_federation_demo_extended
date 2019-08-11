@@ -1,0 +1,29 @@
+{
+  "name": "reviews",
+  "scripts": {
+    "dev": "nodemon --exec babel-node index.js"
+  },
+  "quokka": {
+    "babel": true
+  },
+  "dependencies": {
+    "@apollo/federation": "latest",
+    "apollo-server": "latest",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-inline-import": "^2.0.6",
+    "babel-plugin-transform-exponentiation-operator": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
+    "graphql": "latest",
+    "graphql-import": "^0.7.1",
+    "merge-graphql-schemas": "^1.6.2-bdaf070.0",
+    "nodemon": "^1.19.1",
+    "winston": "^3.1.0",
+    "winston-transport": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.5.5"
+  }
+}
