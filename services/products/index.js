@@ -1,9 +1,9 @@
 import { ApolloServer, gql } from "apollo-server";
 import { buildFederatedSchema } from "@apollo/federation";
 
-import typeDefs from "./graphQL/schemas/typeDefs";
+import typeDefs from "./graphql/schemas/typeDefs";
 
-import resolvers from "./graphQL/resolvers/index";
+import resolvers from "./graphql/resolvers/index";
 
 const server = new ApolloServer({
   schema: buildFederatedSchema([
