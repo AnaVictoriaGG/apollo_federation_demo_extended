@@ -1,13 +1,13 @@
-import users from "./users";
+import accounts from "./account";
 
 const resolvers = {
   Query: {
-    ...users.query
+    ...accounts.query
   },
   Mutation: {
-    ...users.mutation
+    ...accounts.mutation
   },
-  ...users.resolvers
+  ...accounts.resolvers
 };
 
 export default resolvers;

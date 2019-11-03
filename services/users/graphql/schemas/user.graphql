@@ -6,7 +6,7 @@ type User @key(fields: "id") {
   """
   Nombre del usuario
   """
-  name: String
+  name: String!
   """
   Nombre usuario
   """

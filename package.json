@@ -7,6 +7,7 @@
     "start-service-reviews": "nodemon --exec babel-node services/reviews/index.js",
     "start-service-products": "nodemon --exec babel-node services/products/index.js",
     "start-service-inventory": "nodemon --exec babel-node services/inventory/index.js",
+    "start-service-users": "nodemon --exec babel-node services/users/index.js",
     "start-services": "concurrently \"npm:start-service-*\"",
     "postinstall": "lerna bootstrap"
   },

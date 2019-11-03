@@ -1,0 +1,5 @@
+extend type User @key(fields: "id") {
+  id: ID! @external
+  username: String @external
+  numberClient: String @requires(fields: "username")
+}

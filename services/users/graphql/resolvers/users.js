@@ -7,11 +7,5 @@ export default {
     }
   },
   mutations: {},
-  resolvers: {
-    Product: {
-      __resolveReference(object) {
-        return users.find(user => user.id === object.id);
-      }
-    }
-  }
+  resolvers: {}
 };

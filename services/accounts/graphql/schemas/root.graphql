@@ -1,6 +1,0 @@
-type Query {
-  """
-  Devuelve el usuario registrado
-  """
-  me: User
-}
